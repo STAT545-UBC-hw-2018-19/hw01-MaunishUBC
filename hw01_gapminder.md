@@ -87,3 +87,34 @@ min(gapminder$lifeExp)
     ## [1] 23.599
 
 Note that these values map the summary document
+
+Find the country with the highest GDP per capita in the entire gapminder dataset
+
+``` r
+library(dplyr)
+```
+
+    ## Warning: package 'dplyr' was built under R version 3.3.2
+
+    ## 
+    ## Attaching package: 'dplyr'
+
+    ## The following objects are masked from 'package:stats':
+    ## 
+    ##     filter, lag
+
+    ## The following objects are masked from 'package:base':
+    ## 
+    ##     intersect, setdiff, setequal, union
+
+``` r
+b <- arrange(gapminder, desc(gdpPercap))
+```
+
+    ## Warning: package 'bindrcpp' was built under R version 3.3.2
+
+``` r
+print(paste("The richest country is", b$country[1]))
+```
+
+    ## [1] "The richest country is Kuwait"
