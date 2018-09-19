@@ -1,0 +1,50 @@
+---
+title: "hw01_gapminder.Rmd"
+output: github_document
+---
+
+Did install rmarkdown in class, in case you haven't insalled, please do so using install.packages('rmarkdown')
+
+```{r}
+library(rmarkdown)
+```
+
+Did install gapminder in class, in case you haven't insalled, please do so using install.packages('gapminder')
+Loading the package gapminder
+```{r}
+library(gapminder)
+```
+
+Familiarizing with the dataset
+```{r}
+head(gapminder)
+```
+
+Familiarizing with the dataset-2
+```{r}
+summary(gapminder)
+```
+
+What are the dimensions of gapminder like?
+```{r}
+dim(gapminder)
+```
+
+What is the average life expectancy for all countries over all the years
+```{r}
+mean(gapminder$lifeExp)
+
+```
+
+What is the maximum life expectancy for all countries over all the years
+```{r}
+max(gapminder$lifeExp)
+```
+
+What is the minimum life expectancy for all countries over all the years
+```{r}
+min(gapminder$lifeExp)
+```
+Note that these values map the summary document
+
+
